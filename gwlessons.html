@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Wizard</title>
+    <link rel="icon" href="images/gw-logo-80.png">
+    <link rel="stylesheet" href="css/gwscales.css">
+</head>
+<header>
+    <div id="header">
+        <img id="gwlogo" src="images/gw-logo-80.png" alt="Guitar Wizard Logo">
+        <h1 id="gwpage">Lessons</h1>
+        <nav id="menu">
+            <div id="topmenu" class="topnav">
+                <a href="gwscales.html">Scales</a>
+                <a href="gwchords.html">Chords</a>
+                <a href="gwarpeggios.html">Arpeggios</a>
+                <a href="gwprogression.html">Chord Progression</a>
+                <a class="active" href="gwlessons.html">Lessons</a>
+                <img id="menuicon" src="images/icon-menu-80.png" alt="Guitar Wizard Logo">
+            </div>
+        </nav>
+    </div>
+</header>
+<body onload="setStrings()">
+    <div id="inputs">
+        <p id="labelinput1">Strings:</p>
+        <select name="input1" id="input1">
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6" selected>6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+        <p id="labelinput2">Root Note:</p>
+        <select name="input2" id="input2">
+            <option value="9">A</option>
+            <option value="10">A#/Bb</option>
+            <option value="11">B</option>
+            <option value="0" selected>C</option>
+            <option value="1">C#/Db</option>
+            <option value="2">D</option>
+            <option value="3">D#/Eb</option>
+            <option value="4">E</option>
+            <option value="5">F</option>
+            <option value="6">F#/Gb</option>
+            <option value="7">G</option>
+            <option value="8">G#/Ab</option>
+        </select>
+        <p id="labelinput3">Scale:</p>
+        <select name="input3" id="input3">
+            <option value="1">Major</option>
+            <option value="2">Minor</option>
+            <option value="3">Major Pentatonic</option>
+            <option value="4">Minor Pentatonic</option>
+            <option value="5">Pentatonic Blues</option>
+            <option value="6">Harmonic Minor</option>
+            <option value="7">Melocid Minor</option>
+            <option value="8">Diminished</option>
+        </select>
+        <p id="labelinput4">Pattern:</p>
+        <select name="input4" id="input4">
+            <option value="1" selected>Full</option>
+            <option value="2">Vertical</option>
+            <option value="3">3 notes per String</option>
+            <option value="4">4 notes per String</option>
+        </select>
+        <p id="labelinput5">Block:</p>
+        <select name="input5" id="input5">
+        </select>
+    </div>
+    <div id="outputs1" class="outputs">Scale</div>
+    <div id="outputs2" class="outputs">
+        <p>Use <strong>Guitar Wizard</strong> to help you creating your songs.</p>
+        <div id='tuning'></div>
+        <img id="fretboard" src="images/fretboard6.png" alt="Fretboard with 6 Strings">
+        <div id="fretnotes"></div>
+    </div>
+    <div id="outputs3" class="outputs">
+        <p>Notes and intervals:</p>
+        <table id="notesTable">
+            <tr id='intervalsRow'></tr>
+            <tr id="notesRow"></tr>
+        </table>
+    </div>
+    <div id="outputs4" class="outputs"></div>
+    <div id="outputs5" class="outputs"></div>
+    <script src="javascript/gwmenu.js"></script>
+    <script src="javascript/gwstrings.js"></script>
+</body>
+<footer>
+    <div id="footer">
+        <p id="fversion">Version 1.0</p>
+        <p id="fdate">Updated: 30/04/2020</p>
+        <p id="fdev">Developed by Jeison Eccel</p>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,237 @@
+/*Order of properties:
+- Backgroung
+    - display
+    - float
+- Font
+    -color
+    -text properties
+- Position
+    - absolut/relative/fixed
+    - top
+    - right
+    - bottom
+    - left
+- Size 
+    - width
+    - height
+    - box properties
+- Margin
+- Padding
+- Other properties
+*/
+
+header {
+    background: #141A13;
+    font: normal 10pt Calibri;
+    color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+    z-index: 20;
+}
+div#header{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+img#gwlogo {
+    display: block;
+    position: absolute;
+    height: 30px;
+    margin: 5px;
+}
+h1#gwpage {
+    display: block;
+    font: bold 14pt Calibri;
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+    position: absolute;
+    height: 40px;
+    padding: 10px 0px 0px 0px;
+    margin: 0px 0px 0px 40px;
+}
+nav#menu {
+    overflow: hidden;
+}
+nav#menu div {
+    float: right;
+    list-style: none;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px;
+}
+nav#menu a {
+    background-color: #141A13;
+    float: left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    height: 16px;
+    padding: 12px;
+    transition: 0.5s;
+}
+nav#menu a:hover {
+    background-color: #383508;
+}
+nav#menu a.active {
+    color: #F6F979
+}
+img#menuicon {
+    display: none;
+    width: 0px;
+    height: 0px;
+    padding: 0px;
+}
+img#menuicon:hover {
+    background-color: #383508;
+}
+/*Left side of the page with input form.*/
+body {
+    background: #E4EAEA;
+    width: 960px;
+    margin: 40px auto 40px auto;
+    padding: 5px;
+    z-index: 1;
+}
+.outputs {
+    background: rgb(254,255 ,254);
+    display: block;
+    float: left;
+    font: normal 10pt Calibri;
+    position: relative;
+    top: auto;
+    left: 160px;
+    width: 790px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);       
+}
+div#inputs {
+    background: #AE621F;
+    color: #E4EAEA;
+    display: block;
+    float: left;
+    font: normal 10pt Calibri;
+    position: absolute;
+    width: 130px;
+    top: 40px;
+    bottom: 40px;
+    min-height: 260px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+    margin: 5px;
+    padding: 10px;
+    z-index: 2;
+}
+div#inputs p {
+    margin: 0px;
+    padding: 5px;
+}
+div#inputs select {
+    font: normal 10pt Calibri;
+    width: 130px;
+    margin: 0px;
+    padding: 2px;
+}
+div#outputs1 {
+    font: bold 14pt Calibri;
+    width: 780px;
+    margin: 0px;
+    padding: 10px;
+}
+div#outputs2 {   
+    margin: 5px 0px 0px 0px;
+    padding: 0px 5px 0px 5px;
+}
+div#outputs2 img{
+    position: relative;
+    left: 60px;
+    width: 700px;
+    display: inline-block;
+}
+div#outputs3 {  
+    margin: 5px 0px 0px 0px;
+    padding: 0px 5px 15px 5px;
+}
+table#notesTable {
+    /*background: rgb(207, 210, 223);*/
+    border: 1px solid #141A13;
+    border-spacing: 0px;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+}
+div#outputs4 { 
+    margin: 5px 0px 0px 0px;
+    padding: 0px 5px 15px 5px;
+}
+div#outputs5 {
+    margin: 5px 0px 50px 0px;
+    padding: 0px 5px 15px 5px;
+}
+span.tabnote {
+    padding-left: 2.6px;
+    padding-right: 2.6px;
+}
+.tabline {
+    font: normal 8pt calibri;
+    color: rgb(150, 150, 150);
+}
+footer {
+    background: #383508;
+    font: normal 10pt Calibri;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+    z-index: 20;
+}
+div#footer {
+    max-width: 9600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer p#fversion {
+    float: left;
+    margin-top: 0px;
+    padding-left: 10px;
+}
+footer p#fdate {
+    float: right;
+    margin-top: 0px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .topnav a {
+        display: none;
+    }
+    img#menuicon {
+        float: none;
+        display: block;
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+    }
+    img#menuicon {
+        float: none;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        position: relative;
+        width: 100%;
+        border: 1px solid #383508;
+    }
+    .topnav.responsive a:first-child {
+        margin-top: 40px;
+    }
+}
